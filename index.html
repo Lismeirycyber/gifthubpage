@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lismeiry Serrata Pérez</title>
+    <style>
+        /* Estilo de las barras de progreso */
+        .progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 2px;
+            margin: 5px 0;
+        }
+
+        .progress-bar {
+            height: 10px;
+            text-align: center;
+            color: white;
+            border-radius: 2px;
+            line-height: 10px;
+        }
+
+        /* Colores para las barras */
+        .progress-bar.course { background-color: #4caf50; } /* Verde */
+        .progress-bar.project { background-color: #ff9800; } /* Naranja */
+        .progress-bar.life { background-color: #2196f3; } /* Azul */
+
+        /* Estilo para los enlaces que muestran contenido */
+        .clickable {
+            color: #2196f3;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Contenido oculto */
+        #childhoodContent {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        // Función para mostrar/ocultar la niñez
+        function toggleChildhood() {
+            var x = document.getElementById("childhoodContent");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Lismeiry Serrata Pérez</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#">uno</a> | 
+        <a href="#">dos</a> | 
+        <a href="#">tres</a> | 
+        <a href="#">https://validator.w3.org/nu/#l10c11</a>
+    </nav>
+
+    <!-- Comidas Favoritas -->
+    <section>
+        <h2>Comidas Favoritas</h2>
+        <ul>
+            <li>Mariscos</li>
+            <li>Pastas</li>
+            <li>Flan</li>
+            <li>Hamburguesas</li>
+        </ul>
+    </section>
+
+    <!-- Logros -->
+    <section>
+        <h2>Logros</h2>
+
+        <!-- Progreso en este curso -->
+        <p>Progreso en este curso: 100%</p>
+        <div class="progress-container">
+            <div class="progress-bar course" style="width: 100%;">100%</div>
+        </div>
+
+        <!-- Progreso en el proyecto de especialización -->
+        <p>Progreso en el proyecto de especialización: 20%</p>
+        <div class="progress-container">
+            <div class="progress-bar project" style="width: 20%;">20%</div>
+        </div>
+
+        <!-- Progreso en objetivos de vida -->
+        <p>Progreso en objetivos de vida: 30%</p>
+        <div class="progress-container">
+            <div class="progress-bar life" style="width: 30%;">30%</div>
+        </div>
+    </section>
+
+    <!-- Más sobre mí -->
+    <section>
+        <h2>Más sobre mí</h2>
+
+        <!-- Título de Mi Niñez -->
+        <p class="clickable" onclick="toggleChildhood()">• Mi niñez</p>
+
+        <!-- Contenido de mi niñez (oculto inicialmente) -->
+        <div id="childhoodContent">
+            <p><strong>Mi niñez:</strong> Crecí con mi padre y estudiaba ballet y música.</p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Esta página fue creada por Lismeiry Serrata Pérez & Collen Van Lent. para leer mas sobre la web, visita   <nav>
+        <a href="#">http://intro-webdesign.com/projectdescription.html</a>  .</p>
+    </footer>
+</body>
+</html>
